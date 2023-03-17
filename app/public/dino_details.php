@@ -1,5 +1,5 @@
 <?php
-require_once('./services/dino_service.php');
+require_once('../services/dino_service.php');
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];

@@ -1,5 +1,5 @@
 <?php
-require_once('./services/dino_service.php');
+require_once('../services/dino_service.php');
 
 $title = 'Dinos';
 $dinos = query();
@@ -17,7 +17,7 @@ $dinos = query();
         <ul>
             <?php foreach ($dinos as $dino) : ?>
                 <li>
-                    <a class="dino-preview" href="./dino.php?id=<?= $dino['id'] ?>">
+                    <a class="dino-preview" href="/dino_details.php?id=<?= $dino['id'] ?>">
                         <?= $dino['full_name'] ?>
                     </a>
                 </li>
